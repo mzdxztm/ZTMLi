@@ -1,5 +1,6 @@
 package com.mzdxztm.ztm.library.dialog;
 
+import android.app.Activity;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.view.Gravity;
@@ -20,11 +21,11 @@ public class BottomSelect1Dialog extends BaseDialog {
     private boolean isSelect;
     private int currentSelectIndex;
 
-    public BottomSelect1Dialog(@NonNull Context context, List<String> list) {
-        super(context, R.style.dialog_style);
+    public BottomSelect1Dialog(@NonNull Activity activity, List<String> list) {
+        super(activity, R.style.dialog_style);
         this.list = list;
         currentSelectIndex = -1;
-        initView(context);
+        initView(activity);
         initData();
     }
 

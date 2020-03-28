@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AppCompatButton按钮"
+        android:textAllCaps="false" />
+
+    <!--<TextSwitcher
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+    <!-- <AutoCompleteTextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />-->
+    <!--
+        <MultiAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+    <!--<android.support.v7.widget.AppCompatMultiAutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+    <!--  <CheckedTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="男"/>-->
+
+    <!--<android.support.v7.widget.AppCompatCheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+    <!--网上相关文章很少，好像不能用了
+    <android.inputmethodservice.ExtractEditText
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint=""/>-->
+
+
+
+
+</LinearLayout>

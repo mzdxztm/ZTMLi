@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mzdxztm.ztm.library" />
+<!--
+
+    &lt;!&ndash;声明使用相机功能&ndash;&gt;
+<uses-feature
+android:name="android.hardware.camera"
+android:required="true" />
+    &lt;!&ndash;相机权限&ndash;&gt;
+<uses-permission android:name="android.permission.CAMERA"/>
+    &lt;!&ndash;写入内存卡权限（默认获取读权限）&ndash;&gt;
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    &lt;!&ndash;网络权限&ndash;&gt;
+<uses-permission android:name="android.permission.INTERNET"/>-->

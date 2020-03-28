@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CommTextView">
+        <!--处于那种状态-->
+        <attr name="state">
+            <enum name="press" value="1" />
+            <enum name="select" value="2" />
+        </attr>
+        <!--不同状态下的背景色-->
+        <attr name="normal_bg_color" format="color|reference" />
+        <attr name="second_bg_color" format="color|reference" />
+        <!--不同状态下的文字颜色-->
+        <attr name="normal_txt_color" format="color|reference" />
+        <attr name="second_txt_color" format="color|reference" />
+        <!--边线颜色-->
+        <attr name="stroke_color" format="color|reference" />
+        <!--边线宽度-->
+        <attr name="stroke_width" format="dimension|reference" />
+        <!--四角半径-->
+        <attr name="radius" format="dimension|reference" />
+        <!--左上角半径-->
+        <attr name="lt_radius" format="dimension|reference" />
+        <!--右上角半径-->
+        <attr name="rt_radius" format="dimension|reference" />
+        <!--右下角半径-->
+        <attr name="rb_radius" format="dimension|reference" />
+        <!--左下角半径-->
+        <attr name="lb_radius" format="dimension|reference" />
+
+    </declare-styleable>
+
+    <declare-styleable name="SmartRefreshLayout">
+        <attr name="android:clipChildren" />
+        <attr name="android:clipToPadding" />
+        <attr name="srlPrimaryColor" />
+        <attr name="srlAccentColor" />
+        <attr name="srlReboundDuration" format="integer" />
+        <attr name="srlHeaderHeight" format="dimension" />
+        <attr name="srlFooterHeight" format="dimension" />
+        <attr name="srlHeaderInsetStart" format="dimension" />
+        <attr name="srlFooterInsetStart" format="dimension" />
+        <attr name="srlDragRate" format="float" />
+        <attr name="srlHeaderMaxDragRate" format="float" />
+        <attr name="srlFooterMaxDragRate" format="float" />
+        <attr name="srlHeaderTriggerRate" format="float" />
+        <attr name="srlFooterTriggerRate" format="float" />
+        <attr name="srlEnableRefresh" />
+        <attr name="srlEnableLoadMore" format="boolean" />
+        <attr name="srlEnableHeaderTranslationContent" format="boolean" />
+        <attr name="srlEnableFooterTranslationContent" format="boolean" />
+        <attr name="srlHeaderTranslationViewId" format="reference" />
+        <attr name="srlFooterTranslationViewId" format="reference" />
+        <attr name="srlEnablePreviewInEditMode" format="boolean" />
+        <attr name="srlEnableAutoLoadMore" format="boolean" />
+        <attr name="srlEnableOverScrollBounce" format="boolean" />
+        <attr name="srlEnablePureScrollMode" format="boolean" />
+        <attr name="srlEnableNestedScrolling" format="boolean" />
+        <attr name="srlEnableScrollContentWhenLoaded" format="boolean" />
+        <attr name="srlEnableScrollContentWhenRefreshed" format="boolean" />
+        <attr name="srlEnableLoadMoreWhenContentNotFull" format="boolean" />
+        <attr name="srlEnableFooterFollowWhenLoadFinished" format="boolean" />
+        <attr name="srlEnableFooterFollowWhenNoMoreData" format="boolean" />
+        <attr name="srlEnableClipHeaderWhenFixedBehind" format="boolean" />
+        <attr name="srlEnableClipFooterWhenFixedBehind" format="boolean" />
+        <attr name="srlEnableOverScrollDrag" format="boolean" />
+        <attr name="srlDisableContentWhenRefresh" format="boolean" />
+        <attr name="srlDisableContentWhenLoading" format="boolean" />
+        <attr name="srlFixedHeaderViewId" format="reference" />
+        <attr name="srlFixedFooterViewId" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SmartRefreshLayout_Layout">
+        <attr name="layout_srlSpinnerStyle" />
+        <attr name="layout_srlBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="BezierRadarHeader">
+        <attr name="srlPrimaryColor" />
+        <attr name="srlAccentColor" />
+        <attr name="srlEnableHorizontalDrag" />
+    </declare-styleable>
+
+    <declare-styleable name="BallPulseFooter">
+        <attr name="srlClassicsSpinnerStyle" />
+        <attr name="srlAnimatingColor" format="color" />
+        <attr name="srlNormalColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ClassicsHeader">
+        <attr name="srlClassicsSpinnerStyle" />
+        <attr name="srlPrimaryColor" />
+        <attr name="srlAccentColor" />
+        <attr name="srlFinishDuration" />
+        <attr name="srlDrawableArrow" />
+        <attr name="srlDrawableProgress" />
+        <attr name="srlDrawableMarginRight" />
+        <attr name="srlDrawableSize" />
+        <attr name="srlDrawableArrowSize" />
+        <attr name="srlDrawableProgressSize" />
+        <attr name="srlTextSizeTitle" />
+        <attr name="srlTextSizeTime" />
+        <attr name="srlTextTimeMarginTop" format="dimension" />
+        <attr name="srlEnableLastTime" format="boolean" />
+
+        <attr name="srlTextPulling" />
+        <attr name="srlTextLoading" />
+        <attr name="srlTextRelease" />
+        <attr name="srlTextFinish" />
+        <attr name="srlTextFailed" />
+        <attr name="srlTextUpdate" />
+        <attr name="srlTextSecondary" />
+        <attr name="srlTextRefreshing" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ClassicsFooter">
+        <attr name="srlClassicsSpinnerStyle" />
+        <attr name="srlPrimaryColor" />
+        <attr name="srlAccentColor" />
+        <attr name="srlFinishDuration" />
+        <attr name="srlTextSizeTitle" />
+        <attr name="srlDrawableArrow" />
+        <attr name="srlDrawableProgress" />
+        <attr name="srlDrawableMarginRight" />
+        <attr name="srlDrawableSize" />
+        <attr name="srlDrawableArrowSize" />
+        <attr name="srlDrawableProgressSize" />
+
+        <attr name="srlTextPulling" />
+        <attr name="srlTextRelease" />
+        <attr name="srlTextLoading" />
+        <attr name="srlTextRefreshing" />
+        <attr name="srlTextFinish" />
+        <attr name="srlTextFailed" />
+        <attr name="srlTextNothing" />
+
+    </declare-styleable>
+
+    <declare-styleable name="TwoLevelHeader">
+        <attr name="srlMaxRage" format="float" />
+        <attr name="srlFloorRage" format="float" />
+        <attr name="srlRefreshRage" format="float" />
+        <attr name="srlMaxRate" format="float" />
+        <attr name="srlFloorRate" format="float" />
+        <attr name="srlRefreshRate" format="float" />
+        <attr name="srlFloorDuration" format="integer" />
+        <attr name="srlEnableTwoLevel" format="boolean" />
+        <attr name="srlEnableRefresh" />
+        <attr name="srlEnablePullToCloseTwoLevel" format="boolean" />
+    </declare-styleable>
+</resources>

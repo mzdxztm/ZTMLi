@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="dialog_style" parent="@style/Base.V7.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="bottom_dialog_anim" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/tranlate_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/tranlate_bottom_out</item>
+    </style>
+
+    <style name="right_dialog_anim" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/tranlate_right_in</item>
+        <item name="android:windowExitAnimation">@anim/tranlate_right_out</item>
+    </style>
+
+    <style name="right_pop_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/tranlate_right_in</item>
+        <item name="android:windowExitAnimation">@anim/tranlate_right_out</item>
+    </style>
+
+</resources>

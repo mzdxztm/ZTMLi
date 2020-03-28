@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--用户名EditText（文字限制，清空图标，material design效果）-->
+    <!--密码EditText（文字限制，清空图标）-->
+    <!--登陆按钮（圆角设置，normal、press、unable状态设置）-->
+    <!--协议图标和文本设置-->
+
+</LinearLayout>

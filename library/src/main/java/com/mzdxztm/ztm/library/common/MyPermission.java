@@ -1,10 +1,11 @@
 package com.mzdxztm.ztm.library.common;
 
+import android.app.Activity;
 import android.content.pm.PackageManager;
 import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v4.content.ContextCompat;
 
-import com.mzdxztm.ztm.library.other.androidCodeUtils.Utils;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -60,7 +61,12 @@ public class MyPermission {
                 == ContextCompat.checkSelfPermission(InitUtils.app, permission);
     }
 
-
+    @RequiresApi(api = Build.VERSION_CODES.M)
+    public static void requestPermission(Activity activity, int code, String... permisions) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            activity.requestPermissions(permisions, code);
+        }
+    }
 
 
 }

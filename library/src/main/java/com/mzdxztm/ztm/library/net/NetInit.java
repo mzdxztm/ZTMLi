@@ -38,15 +38,15 @@ public class NetInit {
     }
 
     public NetInit defaultInit() {
-        File cacheFile = FileUtils.createFile(NetConstent.cache_path, false);
+        File cacheFile = FileUtils.createFile(NetConstant.cache_path, false);
         //初始化Okhttp,绑定拦截器事件
         okHttpClient = new OkHttpClient.Builder()
-                .connectTimeout(NetConstent.timeout, TimeUnit.SECONDS)                   //设置请求超时时间
-                .readTimeout(NetConstent.timeout, TimeUnit.SECONDS)                      //设置读取数据超时时间
-                .writeTimeout(NetConstent.timeout, TimeUnit.SECONDS)                     //设置写入数据超时时间
+                .connectTimeout(NetConstant.timeout, TimeUnit.SECONDS)                   //设置请求超时时间
+                .readTimeout(NetConstant.timeout, TimeUnit.SECONDS)                      //设置读取数据超时时间
+                .writeTimeout(NetConstant.timeout, TimeUnit.SECONDS)                     //设置写入数据超时时间
                 .addInterceptor(NetInterceptor.getLogInterceptor())              //绑定日志拦截器
                 .addNetworkInterceptor(NetInterceptor.getHeaderInterceptor())       //绑定header拦截器
-                .cache(new Cache(cacheFile, NetConstent.cache_size))                       //设置网络缓存
+                .cache(new Cache(cacheFile, NetConstant.cache_size))                       //设置网络缓存
                 .build();
 
         retrofit = new Retrofit.Builder()

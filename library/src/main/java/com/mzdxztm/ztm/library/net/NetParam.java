@@ -20,7 +20,7 @@ public class NetParam {
      */
     public static void addSignParam(Map<String, Object> params) {
         //通过params和sign_key计算得到sign_value
-        params.put(NetConstent.param_sign_key, signParam(params));
+        params.put(NetConstant.param_sign_key, signParam(params));
     }
 
     /**

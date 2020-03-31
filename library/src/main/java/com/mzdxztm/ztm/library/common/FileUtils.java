@@ -55,45 +55,6 @@ public class FileUtils {
         return new File(path).delete();
     }
 
-    public static BufferedReader readerStream(String file) {
-        BufferedReader bufferedReader = null;
-        try {
-            bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        return bufferedReader;
-    }
-
-    public static BufferedWriter writerStream(String file) {
-        BufferedWriter bufferedWriter = null;
-        try {
-            bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file)));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        return bufferedWriter;
-    }
-
-    public static void close(BufferedReader reader) {
-        if (reader == null) return;
-        try {
-            reader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static void close(BufferedWriter writer) {
-        if (writer == null) return;
-        try {
-            writer.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     public static String getFileName(String dir, String fileName) {
         if (dir == null || TextUtils.isEmpty(fileName)) return null;
         if (!dir.endsWith(File.separator)) dir = dir + File.separator;
@@ -114,5 +75,94 @@ public class FileUtils {
        .append(date.getMinutes());*/
         return "" + System.currentTimeMillis();
     }
+
+    public static boolean isImageFile(String file) {
+        if (TextUtils.isEmpty(file)) return false;
+        return strComp(filePostfix(file), "PNG", "JPG", "GIF", "ICO", "BMP", "WEBP", "TAG", "TIF");
+    }
+
+    public static boolean isAudioFile(String file) {
+        if (TextUtils.isEmpty(file)) return false;
+        return strComp(filePostfix(file), "MP3", "MP2", "FLAC", "WAV", "AMR", "OGG", "AWB",
+                "WMA", "AAC", "AC3", "M4R", "M4A", "MMF", "WAVPACK");
+    }
+
+    public static boolean isVideoFile(String file) {
+        if (TextUtils.isEmpty(file)) return false;
+        return strComp(filePostfix(file), "MP4", "3GP", "AVI", "MKV", "MOV", "FLV", "WMV", "MPG");
+    }
+
+    /**
+     * 获取文件扩展名
+     *
+     * @param file
+     * @return
+     */
+    public static String filePostfix(String file) {
+        if (TextUtils.isEmpty(file)) return "";
+        return file.substring(file.lastIndexOf("."), file.length());
+    }
+
+    /**
+     * 判断字符串是否与数组中某个字符串相等(忽略大小写)
+     *
+     * @param src
+     * @param strs
+     * @return 有相等的字符串返回true，否则false
+     */
+    private static boolean strComp(String src, String... strs) {
+        if (TextUtils.isEmpty(src) || strs == null) return false;
+        if (strs.length == 0) return false;
+        for (int i = 0; i < strs.length; i++) {
+            if (src.equalsIgnoreCase(strs[i])) return true;
+        }
+        return false;
+    }
+
+    public static FileInputStream readFile(String file) {
+        if (TextUtils.isEmpty(file)) return null;
+        FileInputStream stream = null;
+        try {
+            stream = new FileInputStream(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return stream;
+    }
+
+    public static FileOutputStream writeFile(String file) {
+        if (TextUtils.isEmpty(file)) return null;
+        FileOutputStream stream = null;
+        try {
+            stream = new FileOutputStream(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return stream;
+    }
+
+    public static BufferedReader readerFile(String file) {
+        if (TextUtils.isEmpty(file)) return null;
+        BufferedReader bufferedReader = null;
+        try {
+            bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return bufferedReader;
+    }
+
+    public static BufferedWriter writersFile(String file) {
+        if (TextUtils.isEmpty(file)) return null;
+        BufferedWriter bufferedWriter = null;
+        try {
+            bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file)));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return bufferedWriter;
+    }
+
 
 }

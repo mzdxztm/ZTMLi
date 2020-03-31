@@ -1,9 +1,8 @@
 package com.mzdxztm.ztm.library.common;
 
 import android.app.Application;
-import android.content.Context;
 
-import com.mzdxztm.ztm.library.data.resource.Src;
+import com.mzdxztm.ztm.library.data.resource.Res;
 import com.mzdxztm.ztm.library.image.ImageUtils;
 import com.mzdxztm.ztm.library.image.ImgDisplay;
 
@@ -15,8 +14,6 @@ public class InitUtils {
         InitUtils.app = application;
         ImageUtils.initGlide(application);
         ImgDisplay.init(application);
-        SysAppOpen.init(application);
-        Src.init(application);
     }
 
 }

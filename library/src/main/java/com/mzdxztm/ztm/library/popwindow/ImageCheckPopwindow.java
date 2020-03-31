@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.mzdxztm.ztm.library.R;
 import com.mzdxztm.ztm.library.adapter.ImageCheckRvAdapter;
-import com.mzdxztm.ztm.library.data.resource.Src;
+import com.mzdxztm.ztm.library.data.resource.Res;
 import com.ruffian.library.RTextView;
 
 import java.io.File;
@@ -24,7 +24,7 @@ public class ImageCheckPopwindow extends FullScreenPopWindow implements ImageChe
     }
 
     private void initView(AppCompatActivity activity) {
-        View view = Src.layout(R.layout.pop_image_check);
+        View view = Res.layout(R.layout.pop_image_check);
         holder = new ViewHolder(view);
         holder.rtvBack.setOnClickListener(this);
         //adapter

@@ -21,7 +21,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.mzdxztm.ztm.library.R;
-import com.mzdxztm.ztm.library.data.resource.Src;
+import com.mzdxztm.ztm.library.data.resource.Res;
 
 import java.io.Serializable;
 
@@ -53,7 +53,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         rootView = (LinearLayout) findViewById(R.id.layout);
         //init title bar
         titleBarView = (ViewGroup) getTitleBarView(getTitleBarLayoutId());
-        int titleHeight = (int) Src.dimens(R.dimen.title_bar_height);
+        int titleHeight = (int) Res.dimens(R.dimen.title_bar_height);
         LinearLayout.LayoutParams titleLParam = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, titleHeight);
         titleBarView.setLayoutParams(titleLParam);
         //init content

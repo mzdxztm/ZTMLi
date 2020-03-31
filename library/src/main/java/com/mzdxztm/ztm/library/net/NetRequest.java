@@ -56,7 +56,7 @@ public class NetRequest {
     private static String getFinalUrl(String url) {
         if (url == null) return url;
         if (url.startsWith("http")) return url;
-        else return NetConstent.base_url;
+        else return NetConstant.base_url;
     }
 
 

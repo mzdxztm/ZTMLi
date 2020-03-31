@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.mzdxztm.ztm.library.R;
-import com.mzdxztm.ztm.library.data.resource.Src;
+import com.mzdxztm.ztm.library.data.resource.Res;
 import com.mzdxztm.ztm.library.hardware.use.Takephone;
 import com.mzdxztm.ztm.library.popwindow.ImageCheckPopwindow;
 import com.mzdxztm.ztm.library.image.ImageUtils;
@@ -37,7 +37,7 @@ public class ImageSelectRvAdapter extends SelectRvAdapter<String> implements Bas
 
     @Override
     protected RecyclerView.ViewHolder getViewHolder(Context context, int itemType) {
-        return new ImageViewHolder(Src.layout(R.layout.recy_image_select));
+        return new ImageViewHolder(Res.layout(R.layout.recy_image_select));
     }
 
     @Override

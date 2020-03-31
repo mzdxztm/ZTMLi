@@ -1,62 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="v7View"
-        android:text="v7 view 测试"
-        android:textAllCaps="false" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="dialog"
-        android:text="dialog 测试"
-        android:textAllCaps="false" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="popwindow"
-        android:text="popwindow 测试"
-        android:textAllCaps="false" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="v7View"
+            android:text="v7 view 测试"
+            android:textAllCaps="false" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="adapter"
-        android:text="recyclerView adapter 测试"
-        android:textAllCaps="false"
-        android:textColor="@color/aqua" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="dialog"
+            android:text="dialog 测试"
+            android:textAllCaps="false" />
 
-    <!--<com.mzdxztm.ztm.library.view.CommTextView
-        android:id="@+id/commTv"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:text="按钮状态测试"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        app:lt_radius="@dimen/dimen5"
-        app:rt_radius="@dimen/dimen20"
-        app:lb_radius="@dimen/dimen20"
-        app:normal_bg_color="@color/blue"
-        app:rb_radius="10dp"
-        app:second_bg_color="@color/white"
-        app:state="select"
-        app:stroke_color="@color/black"
-        app:stroke_width="2dp"
-        app:normal_txt_color="@color/red"
-        app:second_txt_color="@color/black"/>-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="popwindow"
+            android:text="popwindow 测试"
+            android:textAllCaps="false" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="coll"
-        android:onClick="coll"/>
-</LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="adapter"
+            android:text="recyclerView adapter 测试"
+            android:textAllCaps="false"
+            android:textColor="@color/aqua" />
+
+        <!--<com.mzdxztm.ztm.library.view.CommTextView
+            android:id="@+id/commTv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="按钮状态测试"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:lt_radius="@dimen/dimen5"
+            app:rt_radius="@dimen/dimen20"
+            app:lb_radius="@dimen/dimen20"
+            app:normal_bg_color="@color/blue"
+            app:rb_radius="10dp"
+            app:second_bg_color="@color/white"
+            app:state="select"
+            app:stroke_color="@color/black"
+            app:stroke_width="2dp"
+            app:normal_txt_color="@color/red"
+            app:second_txt_color="@color/black"/>-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="coll"
+            android:text="coll" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="open"
+            android:text="open sysytem app"
+            android:textAllCaps="false" />
+
+       <!-- <com.mzdxztm.ztm.ztmli.view.TestView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/greenyellow" />-->
+
+        <com.mzdxztm.ztm.library.view.RecordVideoView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_test" />
+
+
+        <Button
+            android:id="@+id/btn_dir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="dir"
+            android:text="目录测试"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/tv_dirShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

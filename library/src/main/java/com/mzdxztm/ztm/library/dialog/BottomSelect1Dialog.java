@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.contrarywind.adapter.WheelAdapter;
 import com.contrarywind.view.WheelView;
 import com.mzdxztm.ztm.library.R;
-import com.mzdxztm.ztm.library.data.resource.Src;
+import com.mzdxztm.ztm.library.data.resource.Res;
 
 import java.util.List;
 
@@ -32,7 +32,7 @@ public class BottomSelect1Dialog extends BaseDialog {
     private void initView(@NonNull Context context) {
         setGravity(Gravity.BOTTOM);
         setWindowAnimations(R.style.bottom_dialog_anim);
-        contentView = Src.layout(R.layout.dialog_bottom_wheel_select);
+        contentView = Res.layout(R.layout.dialog_bottom_wheel_select);
         holder = new ViewHolder(contentView);
         holder.tvCancle.setOnClickListener(this);
         holder.tvConfirm.setOnClickListener(this);

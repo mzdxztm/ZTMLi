@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.mzdxztm.ztm.library.R;
 import com.mzdxztm.ztm.library.adapter.ImageSelectRvAdapter;
 import com.mzdxztm.ztm.library.adapter.SelectRvAdapter;
-import com.mzdxztm.ztm.library.data.resource.Src;
+import com.mzdxztm.ztm.library.data.resource.Res;
 import com.ruffian.library.RTextView;
 
 public class ImageSelectPopwindow extends FullScreenPopWindow implements SelectRvAdapter.onSelectChangeListener {
@@ -26,7 +26,7 @@ public class ImageSelectPopwindow extends FullScreenPopWindow implements SelectR
     }
 
     private void initView() {
-        View contentView = Src.layout(R.layout.pop_image_select);
+        View contentView = Res.layout(R.layout.pop_image_select);
         holder = new ViewHolder(contentView);
         holder.rtvBack.setOnClickListener(this);
         holder.tvIndicator.setOnClickListener(this);

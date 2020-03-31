@@ -12,7 +12,7 @@ import com.mzdxztm.ztm.library.R;
 import com.mzdxztm.ztm.library.component.ui.BaseStausBar;
 import com.mzdxztm.ztm.library.component.ui.IStatusBar;
 import com.mzdxztm.ztm.library.component.ui.ITitleBar;
-import com.mzdxztm.ztm.library.data.resource.Src;
+import com.mzdxztm.ztm.library.data.resource.Res;
 
 public abstract class BaseActivity2 extends AppCompatActivity implements View.OnClickListener {
 
@@ -55,7 +55,7 @@ public abstract class BaseActivity2 extends AppCompatActivity implements View.On
     }
 
     private void initContentView() {
-        contentView = (ViewGroup) Src.layout(getContentLayoutId());
+        contentView = (ViewGroup) Res.layout(getContentLayoutId());
         LinearLayout.LayoutParams contentLParam = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT);
         contentView.setLayoutParams(contentLParam);
